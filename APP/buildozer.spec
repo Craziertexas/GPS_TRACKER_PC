@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = GPS(API23)
+title = GPS(API28)
 
 # (str) Package name
 package.name = gps
@@ -56,16 +56,16 @@ fullscreen = 0
 android.permissions = INTERNET,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,SEND_SMS
 
 # (int) Android API to use
-#android.api = 23
+#android.api = 29
 
 # (int) Minimum API required (8 = Android 2.2 devices)
-#android.minapi = 8
+#android.minapi = 26
 
 # (int) Android SDK version to use
-#android.sdk = 21
+#android.sdk = 24
 
 # (str) Android NDK version to use
-#android.ndk = 9
+#android.ndk = 19
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
