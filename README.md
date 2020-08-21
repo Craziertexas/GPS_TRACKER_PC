@@ -8,6 +8,10 @@ Version 1.0 contains the tcp server and client, the prototype of the gui and the
 
 # FOLDER DESCRIPTION
 
+## APP
+
+The native GPS client.
+
 ## GUI
 
 The user interface of the TCP client and server
