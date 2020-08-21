@@ -32,13 +32,9 @@ def recieve_server():
     socket.timeout(2)
     try:
         data_raw=connection.recv(1024)
-        data_raw=str(format(data_raw)) #Bytes to string
-        printstart=data_raw.find("b'")+len("b'")
-        printend=data_raw.rfind(r"\r\n$GPVTG")
-        data=data_raw[printstart:printend]
-        print('Package #',i,':',data)
+        data=data_raw
+        print('Package #',i,':',data.decode())
         i=i+1
-        data=data.encode()
         return data
     except TimeoutError:
         print("Timeout - No data recieved :/")
