@@ -1,5 +1,5 @@
 import socket
-from GUI import GUI
+
 
 def init_server(server_ip,server_port):
     global server
@@ -38,12 +38,10 @@ def recieve_server():
         return data
     except TimeoutError:
         print("Timeout - No data recieved :/")
+        connection.close() #Close connection
         connection_server()
 
-
-
-def close_server():
-    connection.close() #Close connection
+    
 
 
 
