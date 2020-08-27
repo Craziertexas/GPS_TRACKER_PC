@@ -13,7 +13,10 @@ def init_server(server_ip,server_port):
     
 def server_recive():
     global server,i
-    data, address=server.recvfrom(1024)
-    print("\n"+"Message: ",(data.decode()))
-    print("From: ",(address))
+    try:
+        data, address=server.recvfrom(1024)
+        print("\n"+"Message: ",(data.decode()))
+        print("From: ",(address))
+    except:
+        print("An error occurred")
     

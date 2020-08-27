@@ -29,7 +29,6 @@ def connection_server():
 
 def recieve_server():
     global i,connection
-    socket.timeout(2)
     try:
         data_raw=connection.recv(1024)
         data=data_raw
